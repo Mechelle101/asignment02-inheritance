@@ -43,6 +43,10 @@ class Bicycle {
 
 class Unicycle extends Bicycle {
   protected $wheels = 1;
+
+  // public function bug_test() {
+  //   return $this->weight_kg;
+  // }
 }
 
 $trek = new Bicycle;
@@ -72,6 +76,7 @@ echo "Set weight for Unicycle <br>";
 $uni->set_weight_kg(1);
 echo $uni->weight_kg() . "<br>";
 echo $uni->weight_lbs() . "<br>";
-
+//because weight_kg is private it is not returning it
+//echo $uni->bug_test() . "<br>";
 
 ?>
